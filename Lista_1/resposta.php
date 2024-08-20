@@ -7,8 +7,17 @@
 </cabeçalho>
 <corpo>
     <?php
-        $valor = $_POST[ 'valor' ];
-        echo  " Valor informado: $ valor " ;
+        
+        $valor = (int) $_POST['valor'];
+        $valor = (float) $_POST['valor'];
+        $valor = (string) $_POST['valor'];
+        //$valor = (bool) $_POST['valor'];
+
+
+
+        echo   'Valor informado: ' .$valor;
+
+
     ?>
 </corpo>
 </html>

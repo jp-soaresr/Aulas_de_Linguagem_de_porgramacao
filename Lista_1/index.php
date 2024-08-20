@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <cabeça>
     <meta charset="UTF-8">
     <meta name="viewport" content="largura=largura-do-dispositivo, escala-inicial=1.0">

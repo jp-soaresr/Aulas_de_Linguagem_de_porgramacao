@@ -10,7 +10,7 @@
 
   </head>
   <body>
-    <h1>Resposta do Exercicio 1</h1>
+    <h1>Resposta do Exercicio 3</h1>
 
     <?php
         if($_SERVER["REQUEST_METHOD"] == 'POST'){
@@ -20,7 +20,7 @@
                 $valor2 = (int) $_POST['valor2'] ?? 0;
                 // +  - * /  %  ++  --   **
 
-                $resultado = $valor1 + $valor2;
+                $resultado = $valor1 * $valor2;
                 echo "<p>Soma: $resultado </p>";
 
             }catch(Exception $e){

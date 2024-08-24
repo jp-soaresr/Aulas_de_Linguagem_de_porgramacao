@@ -10,7 +10,7 @@
 
   </head>
   <body>
-    <h1>Resposta do Exercicio 1</h1>
+    <h1>Resposta do Exercicio 4</h1>
 
     <?php
         if($_SERVER["REQUEST_METHOD"] == 'POST'){
@@ -19,9 +19,13 @@
                 $valor1 = (int) $_POST['valor1'] ?? 0;   // forma de validar valores, ou e um ou outro. caso tenha valor recebe ele caso nao recebe 0 
                 $valor2 = (int) $_POST['valor2'] ?? 0;
                 // +  - * /  %  ++  --   **
+                if( $valor1 != 0){
 
-                $resultado = $valor1 + $valor2;
-                echo "<p>Soma: $resultado </p>";
+                    $resultado = $valor2 / $valor1;
+                    echo "<p>Soma: $resultado </p>";
+                }
+                else
+                    echo "<p> O divisor informado e 0, informe outro valor </p>";
 
             }catch(Exception $e){
 

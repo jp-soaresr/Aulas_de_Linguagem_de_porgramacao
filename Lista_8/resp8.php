@@ -10,19 +10,18 @@
 
   </head>
   <body>
-    <h1>Resposta do Exercicio 1</h1>
+    <h1>Resposta do Exercicio 8</h1>
 
     <?php
         if($_SERVER["REQUEST_METHOD"] == 'POST'){
             try {
 
-                $valor1 = (int) $_POST['valor1'] ?? 0;   // forma de validar valores, ou e um ou outro. caso tenha valor recebe ele caso nao recebe 0 
+                $valor1 = (int) $_POST['valor1'] ?? 0;  
                 $valor2 = (int) $_POST['valor2'] ?? 0;
-                // +  - * /  %  ++  --   **
-
-                $resultado = $valor1 + $valor2;
-                echo "<p>Soma: $resultado </p>";
-
+                
+                $resultado = $valor1 * $valor2;
+                echo "<p>A area do seu retangulo e: $resultado m²</p>";
+                
             }catch(Exception $e){
 
                 echo "Erro! " .$e -> getMessage();

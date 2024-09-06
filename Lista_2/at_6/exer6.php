@@ -10,18 +10,13 @@
 
 <body class="contatiner">
 
-    <h1>Exercicio 1</h1>
-    <form action="resp3.php" method="POST">
+    <h1>Exercicio 6</h1>
+    <form action="resp6.php" method="POST">
         <div class="row m-5">
             <div class="col">
-                <p>Informe sua valor A </p>
+                <p>Informe sua valor do seu mes </p>
                 <label for="valor1">sendo um numero inteiro:</label>
                 <input type="number" class="form-control" name="valor1" id="valor1">
-            </div>
-            <div class="col">
-                <p>Infrome sua valor B</p>
-                <label for="valor2">sendo um numero inteiro:</label>
-                <input type="number" class="form-control" name="valor2" id="valor2">
             </div>
             
         </div>

@@ -15,9 +15,20 @@
     <?php
        if($_SERVER['REQUEST_METHOD'] == 'POST'){
         try{
-            $valor = $_POST['valor'];
-            $qtd_caracteres = strlen($valor);
-            echo "<p>Quantidade de caracteres $qtd_caracteres</p>";
+            $valor1 = $_POST['valor1'];
+            $valor2 = $_POST['valor2'];
+
+          if($valor1 == $valor2){
+            echo "<p> Seu dois numero sao iguai, por tanto o maior numero e $valor2</p>";
+          }
+          elseif ($valor1 > $valor2){
+            echo "<p> $valor1 $valor2</p>";
+          }
+          else 
+            echo "<p>$valor2 $valor1</p>";
+
+
+  
         } catch(Exception $e){
             echo "Erro:". $e ->getMessage();
         }

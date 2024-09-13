@@ -19,20 +19,19 @@
 
     <?php
     
-    function palavraContida(string $palavra1, string $palavra2): string {
-        if (strpos($palavra1, $palavra2) !== false) {
-            return "<p>Sua palavra '$palavra2' está contida na palavra '$palavra1'.</p>";
-        } else {
-            return "<p>Sua palavra '$palavra2' não está contida na palavra '$palavra1'.</p>";
-        }
+    function formatarData(int $valor1, int $valor2, int $valor3): string {
+        return sprintf('%02d/%02d/%04d', $valor1, $valor2, $valor3);
     }
+
+    
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         try {
-            $palavra1 = $_POST['palavra1'];
-            $palavra2 = $_POST['palavra2'];
+            $valor1 = $_POST['valor1'];
+            $valor2 = $_POST['valor2'];
+            $valor3 = $_POST['valor3'];
 
-            echo palavraContida($palavra1, $palavra2);
+            
 
         } catch (Exception $e) {
             echo "Erro:" . $e->getMessage();

@@ -10,29 +10,13 @@
 
 <body class="contatiner">
 
-    <h1>Exercicio 4</h1>
-    <form action="resp4.php" method="POST">
+    <h1>Exercicio 5</h1>
+    <form action="resp5.php" method="POST">
         <div class="row m-5">
             <div class="col">
-                <p>Informe seu dia</p>
+                <p>Escreva sua numero que sera elevado</p>
                 <label for="valor1">sendo um numero inteiro:</label>
-                <input type="number" class="form-control" name="valor1" id="valor1">
-            </div>
-            
-        </div>
-        <div class="row m-5">
-            <div class="col">
-                <p>Informe seu mes</p>
-                <label for="valor2">sendo um numero inteiro:</label>
-                <input type="number" class="form-control" name="valor2" id="valor2">
-            </div>
-            
-        </div>
-        <div class="row m-5">
-            <div class="col">
-                <p>Informe seu ano</p>
-                <label for="valor3">sendo um numero inteiro:</label>
-                <input type="number" class="form-control" name="valor3" id="valor3">
+                <input type="number" class="" name="valor1" id="valor1">
             </div>
             
         </div>

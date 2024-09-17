@@ -15,13 +15,13 @@
 </head>
 
 <body>
-    <h1>Resposta do Exercicio 4</h1>
+    <h1>Resposta do Exercicio 5</h1>
 
     <?php
     
-    function validar_data($valor1, $valor2, $valor3)
+    function Raiz_numero($valor1)
         {
-            return checkdate($valor1, $valor2, $valor3);
+            return sqrt($valor1);
         }
 
     
@@ -29,14 +29,11 @@
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         try {
             $valor1 = (int) $_POST['valor1'];
-            $valor2 = (int) $_POST['valor2'];
-            $valor3 = (int) $_POST['valor3'];
+            
 
-            if(validar_data($valor1, $valor2, $valor3)){
-                echo "<p>A data $valor1/$valor2/$valor3 é válida</p>";
-            } else {
-                echo "<p>A data informada nao a valida</p>";
-            }
+            $resposta = Raiz_numero($valor1);
+            echo "<p>A raiz do seu numero e: $resposta</p>";
+            
         }
 
             

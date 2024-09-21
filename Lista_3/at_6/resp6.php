@@ -28,7 +28,7 @@
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         try {
-            $valor1 = (int) $_POST['valor1'];
+            $valor1 = (float) $_POST['valor1'];
             
 
             $resposta = aredondando_numero($valor1);
